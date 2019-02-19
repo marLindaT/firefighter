@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="My journey to becoming a volunteer firefighter">
+	<meta name="keywords" content="howo to become a firefighter, Fire, firefighter, fire theory, extinguish">
+    <meta name="author" content="marLindaT">
+  <title>Firefigher Techniques and Fire Science: Blog</title>
+	
+<style type="text/css">
+html{
+	font-family: Arial;
+	background-color: #5B5A59;
+}
+
+
+/************* NAVBAR  ************/
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: red;
+  color: white;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/**********  END NAVBAR ***********/
+
+
+/************ GRID LAYOUT ****************/
+
+@media only screen and (min-width: 600px) {
+/*** layout for full size ****/ 
+
+#wrapper{
+	border: 2px solid red;
+	
+	grid-gap: 3px;
+	display: grid;
+	grid-template-rows: repeat(5, minmax(50px, auto));
+	grid-template-columns: 50px repeat(4, 1fr);
+}
+#header{
+	
+	grid-column: 1/6;
+	grid-row: 1/2;
+
+	text-align: center;
+}
+
+#footer{
+	grid-row:5/6;
+	grid-column: 1/6;
+}
+
+#section-1{
+	grid-row:2/3;
+	grid-column: 2/5;
+
+	text-align: center;
+}
+
+#section-2{
+	grid-column: 2/5;
+	grid-row:3/4;
+	
+
+	text-align: center;
+}
+#section-3{
+	grid-column: 5/6;
+	grid-row: 2/5;
+}
+
+}
+
+/*********** END GRID LAYOUT *************/
+
+/********FOOTER **********/
+#footer{
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 20px;
+}
+
+.p{
+
+	border: 2px double black;
+	padding: 1vw;
+	margin: 1vw;
+	background-color:lightgrey;
+	line-height: 1.6;
+
+}
+
+img:hover{
+
+	transform: scaleY(1.1);
+	transform: scaleX(1.1);
+}
+
+/**********CONTENT BELOW IS PAGE SPECIFIC ***/
+/********CONTENT BELOW IS PAGE SPECIFIC ***/
+
+
+/************ MAIN PAGE HEADER ************/
+#header{
+	color: white;
+}
+
+@keyframes shadowChange {
+  0% {text-shadow: 1px 1px 5px orange;}
+  50% {text-shadow: 1px 1px 5px white;}
+  90% {text-shadow: 1px 1px 5px orange;}
+}
+
+#title{
+	color: #b22222;
+	text-shadow: 1px 1px 5px orange;
+	font-size: 6vh;
+
+	animation-name: shadowChange;
+  	animation-duration: 4s;
+  	animation-iteration-count: infinite;
+
+}
+#header-span{
+
+}
+
+
+
+/************ END MAIN PAGE HEADER ************/
+
+
+</style>	
+
+</head>
+
+<body>
+
+	<nav class="navbar">
+		  <a href="index.html">Home</a>
+		  <a href="blog.html">Blog</a>
+	  <div class="dropdown">
+	    <button class="dropbtn">Curriculum</button>
+	        <div class="dropdown-content">
+	      		<a href="science.html">Science for Firefighters</a>
+	      		<a href="techniques.html">Techinques: Compartment Fires and Ventilation</a>
+	      		<a href="planning.html">Planning: Basic Building Construction</a>
+	        </div>
+  	  </div> 
+	</nav>
+
+
+<main id ="wrapper">
+
+<header id="header">
+	<h1 id = "title">Fire Fighter Techniques: Blog
+	</h1>
+	<span id="header-span"> My journey to becoming a firefighter
+	</span>
+
+</header>
+
+<section id="section-1">
+
+<div class="p intro">
+	<p>The ongoing story of my pursuit of becoming a firefighter is documented below. I hope this account serves to capture my efforts, and potentially be a useful guide for anyone who endeavours to do the same. 
+	</p>
+</div>
+
+</section>
+
+<section id="section-3">
+
+<div class="p blog-entry">
+	<span class="date"> 
+			About Me
+		</span>
+		<p>
+			Just like every boy when I was growing up I wanted to be a firefighter. I wanted to be a police officer, an army general and a dinosaur hunter also, but what boy doesn't. I pursued post secondary education in chemistry believing that understanding the fundamental building blocks and processes of the physical world would be an invaluable aid to me in whatever career I ended up in. That said I hope my children never pursue a career in chemistry...there are simply no jobs.
+		</p>
+	<p>At the time I applied to the local fire brigrade it was February 2018. I was 32 years old. I lived with my wife with our two children at the time aged 4 and 2 with our third due in May. I had full time employment as a laboratory manager at a licensed producer of cannabis. My job was to oversee all the extraction processes by which the cannabis was turned into an oil that patients could consume in either tablet, capsule or oral syringe. I found myself frequently working in excess of 50 hours a week and I hated it. I have a background in chemistry and applied to the job believing that I would be part of the chemistry of formulating and purifying cannabinoids, but instead found myself pushed into a role more of a production manager at a company with very poor guidance and leadership. 
+	</p>
+	<p>
+		Working long hours at a job I had no passion for left me feeling exasperated. Working as a volunteer firefighter in my community is something I could be proud of, where I could actually make a difference, and hopefully a job where the politics and bloated overhead of inefficiency have not yet been able to pollute. 
+	</p>
+</div>
+
+</section>
+
+<section id="section-2">
+
+		<div class="p blog-entry">
+		<span class="date"> 
+			January 30, 2019
+		</span>
+
+		<p>
+			We were informed earlier in the week by our new training officer that tonight would be for fitting/assigning turnout gear. The weather has been bitterly cold, so I wore heavy jeans with a sweatshirt and wollen sweater overtop. While trying on the pants and coats I kept my clothes on. I figured that if I have to be outside in this type of weather I will be wearing similar undergarments, so there is no point in finding anything too form fitting. 
+		</p>
+		<p>
+			All the gear is second hand, used by previous firefighters, some stained with soot, but we are all as excited as children on Christmas morning. I end up having to Frankenstein a pair of red striped pants with a yellow striped coat- amazing!  Balaclavas, boots, helmets, pants, coats, and gloves. Not to mention heavily used copies of Essentials of Firefighting and a training binder to each man or woman and we are set to dress the part. 
+		</p>
+		<p>
+			After we receive our gear myself and the three other recruits for the local department head to the hall to stow our gear at our hooks in the hall. We are each of us now armed with a door code to let us into the hall....can I get a cot there please?  
+		</p>
+		<p>
+			We spend the next 15 minutes or so listening to the local chief and one of the platoon captains give us advice and tips. We are encouraged to come out to the Monday evening training at the hall that the regular firefighters attend weekly. 
+		</p>
+		
+		
+	</div>
+
+
+
+
+
+
+		<div class="p blog-entry">
+		<span class="date"> 
+			January 16, 2019
+		</span>
+
+		<p>
+			Tonight was the first of our training. There were 15 recruits. We all gathered in the lower level of our local municipal building. Indeed it was the typical boring first day bureaucracies required of any first day on the job. Our human resources contact met us there and collected all of our personal paperwork including police checks, driver's abstracts and beneficiary forms for benefits. A small presentation followed after by the fire Chief. He outlined a lot of points regarding the local fire service, expectations as well as introducing some of the other department chiefs.  
+
+		</p>
+		<p>
+			During our HR pow-wow it became apparent through our short introductions to the group that I was among the small minority there who did not have formal fire services training. A couple recruits even had attended training in Texas which from my understanding has some training facility there which is a sort of Mecca to north american firefighter candidates. Among the recruits three women were present, one a nurse seemed to be in late thirties, one a fire alarm technician with formal fire service training maybe in her late twenties, and the other was a paramedic again in her twenties.  
+		</p>
+		<p>
+			Our first night of training was concluded with the note that the service was on the cusp of hiring a new training officer, and that we had the next Wednesday evening off. We all headed out into the cold, and the paramedic suggested drinks at the local bar. Maybe some other time. 
+		</p>
+		
+		
+	</div>
+
+
+
+
+
+		<div class="p blog-entry">
+		<span class="date"> 
+			December 27, 2018
+		</span>
+
+		<p>
+		Today I received an email from the township. It provided me with login credentials for an online HR portal were I can watch videos and take tests. I imagine this portal will be were I take regular tests that were laid out in my offer letter. The first six videos that I am to complete cover the following:
+			<ul>
+				<li>AODA Customer Service Training</li>
+				<li>Occupational Health and Safety Awareness Training for Workers in Ontario</li>
+				<li>PTSD Awareness, Prevention, and Intervention Training for First Responders (Ontario)</li>
+				<li>Understanding Human Rights Training (AODA Edition)</li>
+				<li>WHMIS 2015 including the GHS for Workers and Supervisor- All Jurisdictions</li>
+				<li>Workplace Violence and Harassment Training for Employees (Ontario- Bills 168 and 132)</li>
+			</ul>
+			These videos range in length from 25 minutes to 65 minutes and each has a quiz to be completed at the end. 
+
+		</p>
+		
+		
+	</div>
+
+	<div class="p blog-entry">
+			<span class="date"> 
+				December 21, 2018
+			</span>
+
+			<p>
+				Today I received an email offer of employment!
+
+			</p>
+		</div>
+
+
+	<div class="p blog-entry">
+			<span class="date"> 
+				December 12, 2018
+			</span>
+
+			<p>
+				Today was my interview with the fire captains from the local hall.     
+
+			</p>
+		</div>
+
+
+
+	<div class="p blog-entry">
+			<span class="date"> 
+				December 7, 2018
+			</span>
+
+			<p>
+				Today I reveived a phone call to confirm an interview on Dec 12 at the local station.    
+
+			</p>
+		</div>
+
+
+
+	<div class="p blog-entry">
+		<span class="date"> 
+			December 6, 2018
+		</span>
+
+		<p>
+			Today was my aptitude and physical fitness evaluation. I arrived 15 minutes early to a station in my municipality, but what would not be my home station. The testing was for recruits from the three halls in my area. As I signed my name on the registry I noticed nine other names applying for the position in my town. There was about 40 candidates present at the time the testing began.  
+
+		</p>
+		<p>
+			First we sat to write an aptitude test. The first 10 questions were based off of a floor plan we were shown for two minutes before looking at our paper. The floor plan was simple enough- a 3 bedroom apartment with hallway, kitchen, dining room, loving room, fireplace and fire escape. Various windows and closable doors. I had no idea what to expect but the questions focused on finding exits, shortest paths, and how to isolate fires in various situations. The rest of the aptitude test was broken into categories such as first aid, mechanical, problem solving, etc. Of particular chagrin to myself was the simple pulley questions remeniscent of first year physics....calculate the force required to lift a mass of X kg given the following pulley setup. 
+		</p>
+		<p>
+			Physical testing began immediately following the written test. I was the second candidate to finish the written test, and after having my BP taken, I was fit with a SCBA, boots and gloves- I declined a coat which was my optional. Since I was one of the first applicants to finish the written exam I was lucky enough to not have to wait in lines for the various physical test stations (of which there was 8). The downside....no rest between the stations that were strenuous.  
+		</p>
+		<p>
+			The first station I did was a dummy drag...pretty straight forward, I grabbed a dummy by the wrists and dragged it weaving through pylons and reurning to the starting position. Easy. 
+		</p>
+		<p>
+			Station 2 was a bit more taxing, up two flights of stairs, pull a weight of 55 lbs tied to a rope up and down under control three times. 
+		</p>
+		<p>
+			Station 3 was simple, pick-up and carry a ladder to a wall, extend the ladder and climb. Return to the floor and replace the ladded as was found to begin with. 
+		</p>
+		<p>
+			Station 4 was a 20' ladder climb (without SCBA) and once at the top screw together two 1 1/2" hose couplings, then unscrew and descend. 
+		</p>
+		<p>
+			Station 5 was a stair climb with hose bundle. Two flights of stairs three times. Easy.
+		</p>
+		<p>
+			Station 6 was forcible entry simulation. Using a sledge hammer a tractor tire along a table to a certain point. What fun!
+		</p>
+		<p>
+			Station 7 was a claustraphobia test. Wearing a blacked out SCBA mask crawl into a 2' diameter pipe and find a doll. 
+		</p>
+
+
+	</div>
+
+
+
+
+
+		<div class="p blog-entry">
+		<span class="date"> 
+			November 20, 2018
+		</span>
+
+		<p>
+			Out of the blue I received an email from the township saying that I was selected for the next step in the volunteer firefighter hiring process. I was selected to write an aptitude test and undergo physical fitness evalutaion in two weeks time. I am extatic, but terrified. 
+
+		</p>
+		<p>
+			I am coming off a period of about 2 months of sedentary living, suffering a severe case of gastrointestinal discomfort my diet changed and my typical training regime- although usually more focused on heavy lifting- became non-existent. Fearing that I would be asked to perform CPAT like testing I immediately begin cardio workouts to increase my cardio capacity. Running on the treadmill in the basement was my go to, and often I would try to squeeze in two runs a day at the expense of spending time with my wife. I know she came to resent my neglect of her, but I know she understands why I am doing this, and she is my biggest supporter in this endeavour. I wonder if she truly realizes the demand of my time this position will require.....I feel like that might be a story for another day. On days that I didnt run I would lift, shedding plates and increasing reps I focused on squats, shoulder press, bent over rows and weighted steps ups- all with a barbell. Typical training loads for all these movements was 100lbs plus bar, which would allow me to easily handle higher reps with reduced rest in between sets with quick transitions for supersetting. I performed as many weighted step-ups as I could, holding the bar as though I was going to perform a back squat and then alternating legs stepping up onto a platform of 15 inches. My intent was to train harder than what the CPAT test would include, and since I do not have a weight vest or stair climber this was the easiest way for me to accomplish a similar task as the three minute weighted stair climb that starts the CPAT. 
+
+		</p>
+		
+	</div>
+
+	<div class="p blog-entry">
+		<span class="date"> 
+			March 2018
+		</span>
+		<p>
+			Having lived in our small town for less than a year I submitted my application to the municipal fire service as a volunteer fire fighter. Having no formal training in the trades I have little real expectation that this will manifest in anything more than a passing glance from some admin person at the township. 
+		</p>
+		<p>
+			My CV includes my undergraduate and graduate degrees in chemistry, about 13 months as a bench chemist at a synthetic lab, over a year of work as a formulation lab chemist at a powder coating plant and my current position as an extraction chemist at a licensed cannabis producer (Since my application submission I was promoted to manager but my duties only expanded to include managerial responsibilities). Additionally I have first aid certification but no D-Z license. I did not inlcude my volunteer work for some reason. I was certain to point out that I have experience working with a variety of tools-growing up working in my father's metal fabricating shop, and working with high pressure extractors and other various lab equipment has helped me cultivate.  
+		</p>
+
+	</div>
+
+
+
+
+
+
+</section>
+
+
+
+<footer id="footer">
+
+
+	<div>© 2018 Copyright: <a href="#">Firefightertechniques.com</a>
+	</div>
+
+</footer>
+
+</main>
+
+
+
+<script>
+let title = document.getElementById
+
+</script>
+</body>
+</html>
