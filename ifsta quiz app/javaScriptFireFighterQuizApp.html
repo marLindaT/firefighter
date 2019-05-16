@@ -1,0 +1,213 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Title of the document</title>
+</head>
+
+<body>
+
+
+
+<div class='container-fluid'>
+	
+	<div class='row'>
+		<div class=' col-sm-6 text-center'>
+			
+			<input type='button' value='Start Quiz' id='startQuizButton' class=' btn btn-lg btn-success' autofocus>
+		
+		</div>
+		<div class=' col-sm-6 text-center'>
+
+			<h3><p id='displayScore'></p></h3>
+			
+			<h3><p id='displayProgress'></p></h3>
+		
+		</div>
+	</div>
+	
+	
+<!-- question Field -->
+	<div class='row'>
+		<div class='col-sm-12 jumbotron bg-warning text-center'>
+		
+			<h3 id='quiz' class=''></h3>
+			
+		
+		</div>
+	</div>
+
+<!-- answer field below -->
+	<div class='row'>
+		<div class='col-sm-12 text-center'>
+		
+			<form >
+				
+				<h3>Answer:</h3>
+				<input type='radio' name = 'answers' id='a' value='a'>A: <span id='answerA'></span><br>
+				<input type='radio' name = 'answers' id='b' value='b'>B: <span id='answerB'></span><br>
+				<input type='radio' name = 'answers' id='c' value='c'>C: <span id='answerC'></span><br>
+				<input type='radio' name = 'answers' id='d' value='d'>D: <span id='answerD'></span><br>
+				
+			<br>		
+			</form>
+			
+
+
+			
+			<input type='button' value='submit' id='submitButton' class='btn btn-primary btn-lg'>
+
+		</div>
+	</div>	
+
+
+</div><!-- end of container -->
+
+
+
+
+<script>
+
+let used_question_list = []
+
+let question_list =
+[{'question': 'A ___ occupancy type must meet the building code for its intended use.', 'a': 'a. separated use', 'b': 'b. single-use', 'c': 'c. Type I', 'd': 'd. Type III', 'ans': 'The correct answer is: single-use'},
+{'question': 'Which of the following metals will be affected by heat more rapidly than steel?', 'a': 'a. Lead', 'b': 'b. Aluminum', 'c': 'c. Tin', 'd': 'd. Copper', 'ans': 'The correct answer is: Aluminum'},
+{'question': 'In what fire stage is structural collapse very likely?', 'a': 'a. Growth', 'b': 'b. Decay', 'c': 'c. Fully developed', 'd': 'd. Incipient', 'ans': 'The correct answer is: Decay'},
+{'question': 'The International Building Code (IBC©) and National Fire Protection Association (NFPA®) define construction type based on the performance of the construction when:', 'a': 'a. exposed to an earthquake.', 'b': 'b. a sprinkler system is activated.', 'c': 'c. exposed to fire.', 'd': 'd. a fire alarm system is activated.', 'ans': 'The correct answer is: exposed to fire.'},
+{'question': 'What type of door protects openings in fire-rate walls?', 'a': 'a. Fire door', 'b': 'b. Hollow-core door', 'c': 'c. Metal door', 'd': 'd. Solid-core door', 'ans': 'The correct answer is: Fire door'},
+{'question': 'What occupancy type contains multiple occupancy or use groups?', 'a': 'a. Type III', 'b': 'b. Single-use', 'c': 'c. Separated use', 'd': 'd. Type I', 'ans': 'The correct answer is: Separated use'},
+{'question': 'Which of the following BEST describes when structural collapse may occur?', 'a': 'a. It can only occur before fire suppression.', 'b': 'b. It can occur when all the factors are met.', 'c': 'c. It can occur well after the fire is extinguished.', 'd': 'd. It can only occur during fire suppression.', 'ans': 'The correct answer is: It can occur well after the fire is extinguished.'},
+{'question': 'In what construction type are exterior load-bearing walls composed entirely of wood?', 'a': 'a. Type V', 'b': 'b. Type I', 'c': 'c. Type IV', 'd': 'd. Type III', 'ans': 'The correct answer is: Type V'},
+{'question': 'According to the National Building Code of Canada (NBCC) heavy timber construction avoids:', 'a': 'a. using noncombustible materials.', 'b': 'b. concealed spaces under floors and roofs.', 'c': 'c. using flame-retardant materials.', 'd': 'd. having open crawl spaces.', 'ans': 'The correct answer is: concealed spaces under floors and roofs.'},
+{'question': 'Laminated timber, medium density fiberboard (MDF), and finger-jointed timber are all examples of what common building material?', 'a': 'a. Lath and plaster', 'b': 'b. Metal', 'c': 'c. Plastic', 'd': 'd. Composite material', 'ans': 'The correct answer is: Composite material'},
+{'question': 'What type of door design can prevent movement of hose or equipment into a building?', 'a': 'a. Folding door', 'b': 'b. Sliding door', 'c': 'c. Vertical door', 'd': 'd. Revolving door', 'ans': 'The correct answer is: Revolving door'},
+{'question': 'What type of stairs uses a ventilation system activated by automatic fire or smoke detection?', 'a': 'a. Access stairs', 'b': 'b. Smokeproof stair enclosures', 'c': 'c. Fire escapes', 'd': 'd. Protected stairs', 'ans': 'The correct answer is: Smokeproof stair enclosures'},
+{'question': 'Manufactured homes built before 1976 have less ___ than those of current construction:', 'a': 'a. fire resistance', 'b': 'b. lightweight construction', 'c': 'c. building restrictions', 'd': 'd. content load', 'ans': 'The correct answer is: fire resistance'},
+{'question': "What building component's construction varies depending on its level?", 'a': 'a. Wall', 'b': 'b. Floor/Ceiling', 'c': 'c. Foundation', 'd': 'd. Roof', 'ans': 'The correct answer is: Floor/Ceiling'},
+{'question': 'What type of roof is used to prevent ice damming?', 'a': 'a. Cold roof', 'b': 'b. Rain roof', 'c': 'c. Green roof', 'd': 'd. Photovoltaic (Solar) roof', 'ans': 'The correct answer is: Cold roof'},
+{'question': 'Ventilating a rain roof will not remove smoke until:', 'a': 'a. security measures are removed.', 'b': 'b. sheeting layers are pierced.', 'c': 'c. the dead load is mitigated.', 'd': 'd. the original roof is penetrated.', 'ans': 'The correct answer is: the original roof is penetrated.'},
+{'question': 'Which type of roof is used whenever large open floor spaces with limited interior support is needed?', 'a': 'a. Bowstring truss', 'b': 'b. Lantern', 'c': 'c. Mansard', 'd': 'd. Sawtooth', 'ans': 'The correct answer is: Bowstring truss'},
+{'question': 'A collapse zone for a Type IV structure should be established when:', 'a': 'a. its veneer begins to curtain collapse.', 'b': 'b. it has been determined that glass shards will be directed at on-scene personnel.', 'c': 'c. the structure has been weakened by repeated fires over time.', 'd': 'd. walls begin to shift because the building is twisting.', 'ans': 'The correct answer is: the structure has been weakened by repeated fires over time.'},
+{'question': 'Which of the following BEST describes a primary dangerous building condition?', 'a': 'a. Conditions that permit occupants to safely escape', 'b': 'b. Conditions that allow tactical ventilation', 'c': 'c. Conditions that suppress fire', 'd': 'd. Conditions that contribute to fire spread', 'ans': 'The correct answer is: Conditions that contribute to fire spread'},
+{'question': 'Type III construction requires exterior walls and structural members to be constructed of:', 'a': 'a. large-dimension lumber.', 'b': 'b. noncombustible materials.', 'c': 'c. wood and metal.', 'd': 'd. steel and masonry.', 'ans': 'The correct answer is: noncombustible materials.'},
+{'question': 'What type of door may be required by building codes to be constructed of tempered material that resists breakage?', 'a': 'a. Metal door', 'b': 'b. Fire door', 'c': 'c. Panel door', 'd': 'd. Glass door', 'ans': 'The correct answer is: Glass door'},
+{'question': 'Steel structural members lengthen as much as 4 inches (100 mm) when heated to:', 'a': 'a. 500°F (260°C).', 'b': 'b. 900°F (482°C).', 'c': 'c. 1,000°F (538°C).', 'd': 'd. 300°F (149°C).', 'ans': 'The correct answer is: 1,000°F (538°C).'},
+{'question': 'Vertical tactical ventilation can be defined as channeling smoke from the:', 'a': 'a. lowest point in a building.', 'b': 'b. point in a building that has the least windows.', 'c': 'c. highest point in a building.', 'd': 'd. point in a building that has the most windows.', 'ans': 'The correct answer is: highest point in a building.'},
+{'question': 'What roof type is frequently penetrated by chimneys, shafts and skylights?', 'a': 'a. Arched', 'b': 'b. Flat', 'c': 'c. Shed', 'd': 'd. Pitched', 'ans': 'The correct answer is: Flat'},
+{'question': 'Fuel loading is defined as the maximum heat produced if:', 'a': 'a. no combustible materials are present.', 'b': 'b. all combustible materials in a given area burn.', 'c': 'c. none of the combustible materials in a given area burn.', 'd': 'd. nothing but combustible materials are present.', 'ans': 'The correct answer is: all combustible materials in a given area burn.'},
+{'question': 'What part of the roof is exposed to weather?', 'a': 'a. Coverings', 'b': 'b. Penetrations and openings', 'c': 'c. Decks', 'd': 'd. Supports', 'ans': 'The correct answer is: Coverings'},
+{'question': "What part of a roof's construction can be manufactured from smaller pieces of wood or light gauge steel?", 'a': 'a. I-beams', 'b': 'b. Metal gusset plates', 'c': 'c. Box beams', 'd': 'd. Lightweight construction support system', 'ans': 'The correct answer is: Lightweight construction support system'},
+{'question': 'Which of the following can be the result of rapidly cooling cast iron with water?', 'a': 'a. It may gain tensile strength.', 'b': 'b. It may lose small portions from the surface.', 'c': 'c. It may elongate as much as 4 inches (100 mm).', 'd': 'd. It may crack or shatter.', 'ans': 'The correct answer is: It may crack or shatter.'},
+{'question': 'Additions to the structure, replacing fire escapes with enclosed stairways, and removing non-load-bearing walls are all types of:', 'a': 'a. security measures.', 'b': 'b. permitted structural modifications.', 'c': 'c. nonpermitted structural modifications.', 'd': 'd. roof obstructions.', 'ans': 'The correct answer is: permitted structural modifications.'},
+{'question': 'How much is added to the weight of floors for every U.S. gallon (SI liter) used during suppression?', 'a': 'a. 8.33 pounds (3.69 kilograms)', 'b': 'b. 10.22 pounds (4.63 kilograms)', 'c': 'c. 6.25 pounds (2.83 kilograms)', 'd': 'd. 5.22 pounds (2.37 kilograms)', 'ans': 'The correct answer is: 8.33 pounds (3.69 kilograms)'},
+{'question': 'When a collapse is imminent, personnel ___ in the collapse zone.', 'a': 'a. are allowed to work', 'b': 'b. may cautiously place an unstaffed master stream', 'c': 'c. should never work', 'd': 'd. may stay for twenty minutes', 'ans': 'The correct answer is: may cautiously place an unstaffed master stream'},
+{'question': "Which of the following BEST describes who determines a structure's construction classification type?", 'a': 'a. City official, property owner, contractor', 'b': 'b. Contractor, architect, city official', 'c': 'c. Structural engineer, contractor, city official', 'd': 'd. Architect, structural engineer, contractor', 'ans': 'The correct answer is: Architect, structural engineer, contractor'},
+{'question': 'The locations of bathrooms and mechanical spaces can be indicated by roof:', 'a': 'a. penetrations and openings.', 'b': 'b. coverings.', 'c': 'c. supports.', 'd': 'd. decks.', 'ans': 'The correct answer is: penetrations and openings.'},
+{'question': 'The critical temperature for steel trusses is:', 'a': 'a. 900°F (482°C).', 'b': 'b. 300°F (149°C).', 'c': 'c. 500°F (260°C).', 'd': 'd. 1,000°F (538°C) .', 'ans': 'The correct answer is: 1,000°F (538°C) .'},
+{'question': 'Which of the following building materials absorbs heat as moisture evaporates?', 'a': 'a. Metal', 'b': 'b. Gypsum', 'c': 'c. Lath and plaster', 'd': 'd. Reinforced concrete', 'ans': 'The correct answer is: Gypsum'},
+{'question': 'Doors are classified by:', 'a': 'a. where they are located in a structure.', 'b': 'b. what material they are made of.', 'c': 'c. the way they operate.', 'd': 'd. who the original designer was.', 'ans': 'The correct answer is: the way they operate.'},
+{'question': 'Which of the following movable windows includes a large number of narrow overlapping glass sections that swing outward?', 'a': 'a. Jalousie', 'b': 'b. Awning', 'c': 'c. Pivoting', 'd': 'd. Projecting', 'ans': 'The correct answer is: Jalousie'},
+{'question': 'What type of roof contains panels that retain electricity even when off?', 'a': 'a. Green roof', 'b': 'b. Rain roof', 'c': 'c. Photovoltaic (Solar) roof', 'd': 'd. Cold roof', 'ans': 'The correct answer is: Photovoltaic (Solar) roof'},
+{'question': 'Green wood has a high ___ that affects burn rate.', 'a': 'a. moisture content', 'b': 'b. spalling point', 'c': 'c. failure temperature', 'd': 'd. heat resistance', 'ans': 'The correct answer is: moisture content'},
+{'question': 'The interior elements in what type of construction are made of solid or laminated wood with no concealed space?', 'a': 'a. Type III', 'b': 'b. Type II', 'c': 'c. Type IV', 'd': 'd. Type V', 'ans': 'The correct answer is: Type IV'},
+{'question': 'Which of the following construction types has walls, floors, and ceilings that must be able to resist fire for three to four hours?', 'a': 'a. Type IV', 'b': 'b. Type V', 'c': 'c. Type I', 'd': 'd. Type III', 'ans': 'The correct answer is: Type I'},
+{'question': 'Which of the following must be considered when deciding the size of a collapse zone?', 'a': 'a. Number of personnel on-scene', 'b': 'b. Type of building construction and safest location for personnel', 'c': 'c. Number of personnel on-scene and type of building construction', 'd': 'd. Local adopted building codes', 'ans': 'The correct answer is: Type of building construction and safest location for personnel'},
+{'question': 'Renovation, age of the structure, weather, and loads are all:', 'a': 'a. renovations hazards.', 'b': 'b. building construction hazards.', 'c': 'c. impossible to estimate the impact of on a structure.', 'd': 'd. structural collapse factors.', 'ans': 'The correct answer is: structural collapse factors.'},
+{'question': 'What type of common building material includes bricks, stones, and concrete blocks?', 'a': 'a. Masonry', 'b': 'b. Wood', 'c': 'c. Lath and Plaster', 'd': 'd. Metal', 'ans': 'The correct answer is: Masonry'},
+{'question': 'Which of the following BEST describes walls that support the weight of a structure or structural components?', 'a': 'a. Penetrating walls', 'b': 'b. Fire walls', 'c': 'c. Load-bearing walls', 'd': 'd. Non-load-bearing walls', 'ans': 'The correct answer is: Load-bearing walls'},
+{'question': 'The critical temperature for steel can be reached at ceiling level from:', 'a': 'a. the rising heat and smoke in the room.', 'b': 'b. heat from other spaces in the structure.', 'c': 'c. the steam from fire suppression efforts.', 'd': 'd. construction materials that burn quickly.', 'ans': 'The correct answer is: the rising heat and smoke in the room.'},
+{'question': 'When exposed to temperatures above ___ unprotected steel will expand and twist.', 'a': 'a. 1,000°F (538°C)', 'b': 'b. 900°F (482°C)', 'c': 'c. 500°F (260°C)', 'd': 'd. 300°F (149°C)', 'ans': 'The correct answer is: 1,000°F (538°C)'},
+{'question': 'Which of the following buildings may be exempt from local building codes?', 'a': 'a. Factory-built (mobile) homes', 'b': 'b. School buildings', 'c': 'c. Industrial factories', 'd': 'd. Business structures', 'ans': 'The correct answer is: Factory-built (mobile) homes'},
+{'question': 'In which roof style does the design depend on exterior walls to support its weight?', 'a': 'a. Arched', 'b': 'b. Flat', 'c': 'c. Sawtooth', 'd': 'd. Pitched', 'ans': 'The correct answer is: Arched'},
+{'question': 'Which of the following BEST describes where the collapse zone is established?', 'a': 'a. Near any area that is 10 feet (3.04 m) from exterior walls', 'b': 'b. Near any area that is 20 feet (6.09 m) from exterior walls', 'c': 'c. Adjacent to any exposed interior walls', 'd': 'd. Adjacent to any exposed exterior walls', 'ans': 'The correct answer is: Adjacent to any exposed exterior walls'},
+{'question': 'For which type of construction is flying glass the primary collapse zone hazard concern?', 'a': 'a. Type I', 'b': 'b. Type V', 'c': 'c. Type III', 'd': 'd. Type IV', 'ans': 'The correct answer is: Type I'},
+{'question': 'What type of stairs typically connects no more than two levels if not required as part of the means of egress?', 'a': 'a. Protected stairs', 'b': 'b. Exterior stairs', 'c': 'c. Access stairs', 'd': 'd. Unprotected stairs', 'ans': 'The correct answer is: Access stairs'},
+{'question': 'What building component is designed to provide drainage, support snow accumulation, and resist the effects of wind?', 'a': 'a. Floor/Ceiling', 'b': 'b. Wall', 'c': 'c. Foundation', 'd': 'd. Roof', 'ans': 'The correct answer is: Roof'},
+{'question': 'What building component may be an assembly of studs with exterior materials on the outside and an interior covering on the inside?', 'a': 'a. Floor/Ceiling', 'b': 'b. Roof', 'c': 'c. Wall', 'd': 'd. Foundation', 'ans': 'The correct answer is: Wall'},
+{'question': 'What part of the roof extends from wall to wall on a flat roof?', 'a': 'a. Top and bottom chords', 'b': 'b. Horizontal joists', 'c': 'c. Beams', 'd': 'd. Webbing', 'ans': 'The correct answer is: Beams'},
+{'question': 'What type of movable window has a side-hinged sash, usually installed to swing outward?', 'a': 'a. Horizontal sliding', 'b': 'b. Double-hung', 'c': 'c. Single-hung', 'd': 'd. Casement', 'ans': 'The correct answer is: Casement'},
+{'question': 'What building component may be mounted over doors and windows to prevent illegal entry?', 'a': 'a. Solar energy panels', 'b': 'b. Plywood sheathings', 'c': 'c. Security bars or grilles', 'd': 'd. Truss assemblies', 'ans': 'The correct answer is: Security bars or grilles'},
+{'question': 'Which of the following BEST describes a possible construction hazard?', 'a': 'a. Fire detection systems may be damaged.', 'b': 'b. The building is subject to rapid fire spread because protective features are not in place.', 'c': 'c. Danger increases because occupants and belongings remain in one part of the building while work goes on in the other.', 'd': 'd. Furnishings may contribute to fire spread.', 'ans': 'The correct answer is: The building is subject to rapid fire spread because protective features are not in place.'},
+{'question': 'What construction type is composed of materials that will not contribute to fire development or spread?', 'a': 'a. Type IV', 'b': 'b. Type I', 'c': 'c. Type III', 'd': 'd. Type II', 'ans': 'The correct answer is: Type II'},
+{'question': 'Knowing types of doors and door hardware can help firefighters:', 'a': 'a. judge roof safety.', 'b': 'b. select the right type of vertical tactical ventilation.', 'c': 'c. predict fire development.', 'd': 'd. select correct forcible entry tools.', 'ans': 'The correct answer is: select correct forcible entry tools.'},
+{'question': 'What part of the window is composed of a sill, side jamb, and head jamb?', 'a': 'a. Frame', 'b': 'b. Sash', 'c': 'c. Head', 'd': 'd. Pane', 'ans': 'The correct answer is: Frame'},
+{'question': 'The use of prefabricated wood truss systems in Type V construction creates:', 'a': 'a. small openings for crawl spaces.', 'b': 'b. a closed channel system between floors.', 'c': 'c. holes for utility lines.', 'd': 'd. a large, open void between floors.', 'ans': 'The correct answer is: a large, open void between floors.'},
+{'question': 'A collapse zone must be established when:', 'a': 'a. there is no evidence of structural instability.', 'b': 'b. mortar between masonry shows no sign of deterioration.', 'c': 'c. furnishings and finishes do not overwhelm fire suppression systems.', 'd': 'd. a defensive strategy has been adopted.', 'ans': 'The correct answer is: a defensive strategy has been adopted.'},
+{'question': 'What is the most effective defense against heavy content fuel loading?', 'a': 'a. Adopting local standards that limit multistory buildings', 'b': 'b. Not allowing the use of combustible materials in construction', 'c': 'c. Restricting the types of combustible materials used', 'd': 'd. Proper inspection and code enforcement', 'ans': 'The correct answer is: Proper inspection and code enforcement'},
+{'question': 'Which of the following doors has the advantage of eliminating door swing that might interfere with use of interior space?', 'a': 'a. Folding door', 'b': 'b. Revolving door', 'c': 'c. Vertical door', 'd': 'd. Sliding door', 'ans': 'The correct answer is: Sliding door'},
+{'question': 'What building component is designed to support the weight of a building and all its contents?', 'a': 'a. Floor/Ceiling', 'b': 'b. Wall', 'c': 'c. Roof', 'd': 'd. Foundation', 'ans': 'The correct answer is: Foundation'},
+{'question': 'Which of the following is the most common building material in North America?', 'a': 'a. Lath and Plaster', 'b': 'b. Wood', 'c': 'c. Metal', 'd': 'd. Masonry', 'ans': 'The correct answer is: Wood'},
+
+ ]
+
+// add an "answer" to each question object that can be compared easily using regex
+ function makeAnswerForRegex(list){
+ 	for(i=0; i<list.length; i++){
+ 		list[i]["answer"] = list[i]["ans"].slice(23);
+ 	}
+ 	return list;
+ }
+
+question_list = makeAnswerForRegex(question_list);
+
+
+const quiz = document.querySelector('#quiz');
+const answerA = document.querySelector('#answerA');
+const answerB = document.querySelector('#answerB');
+const answerC = document.querySelector('#answerC');
+const answerD = document.querySelector('#answerD');
+//radio button handles
+const a = document.querySelector('#a');
+const b = document.querySelector('#b');
+const c = document.querySelector('#c');
+const d = document.querySelector('#d');
+
+let Q_index = null;
+
+function questionTime(){
+	if (question_list.length >0){
+		let i = Math.floor(Math.random()*question_list.length)+1;// random question
+		Q_index = i;// set Q_index to be able to remove spent questions
+		//populate html with question and answers to read
+		quiz.textContent = question_list[i]["question"]
+		answerA.textContent = question_list[i]["a"];
+		answerB.textContent = question_list[i]["b"];
+		answerC.textContent = question_list[i]["c"];
+		answerD.textContent = question_list[i]["d"];
+
+
+	}
+}
+
+function checkAnswer(){
+
+	let radios = document.getElementsByName('answers');
+
+	for(let i = 0; i<radios.length;i++){
+		if (radios[i].checked){
+			let regex = new RegExp(question_list[Q_index]["answer"]);
+			//if(radios[i].value.search(regex)>0){
+			if(question_list[Q_index][radios[i].value].search(regex)>0){
+				alert("True");
+				used_question_list.push(question_list.splice(Q_index, 1));
+
+
+			}
+		}
+	}
+}
+
+
+
+startQuizButton.addEventListener('click', questionTime);
+
+submitButton.addEventListener('click', checkAnswer);
+
+
+</script>
+
+
+
+</body>
+
+</html>
