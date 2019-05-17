@@ -6,7 +6,9 @@ import os
 
 
    
-chapter = 4
+chapter = 101
+
+
 
 soup = BeautifulSoup(open(f"ifsta html\\Take the Chapter {chapter} Test.html"), "html.parser")
 
@@ -53,17 +55,22 @@ def createQuestionDictionary(qlist, alist, answers):
         print("escaped")
         return None
         ## exit if the lists aren't equal length
-    result ={}
+    result =[]
     questionNum = 1
     for i in range(len(qlist)):
         
-        result[f"Chapter{chapter}_question{questionNum}"] = {"question":qlist[questionNum-1],
+        obj = {
+            "chapter": f"Chapter {chapter}",
+            "question":qlist[questionNum-1],
               "a":alist[questionNum-1][0],
             "b":alist[questionNum-1][1],
             "c":alist[questionNum-1][2],
             "d":alist[questionNum-1][3],
-            "ans":answers[questionNum-1]}
-        questionNum +=1
+            "ans":answers[questionNum-1]
+                                        }
+        questionNum+=1
+        result.append(obj)
+        
         
     return result
     
@@ -72,11 +79,13 @@ def createQuestionDictionary(qlist, alist, answers):
 final = createQuestionDictionary(questions, answer_arr, correct_ans)
 
 
-#file = open("deleteMe.txt", "a")
+file = open("javascriptReadyIFSTAQuestion.txt", "a")
 
-#file.write(str(final))
+for item in final:
+    file.write(str(item))
+    file.write(",")
 
-#file.close()
+file.close()
     
     
 
