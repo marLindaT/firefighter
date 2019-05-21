@@ -1,0 +1,216 @@
+ let raw_arr = [ 
+Statement 1: Blades range from large-toothed blades for quick cuts and fine-toothed blades for fine, precise cuts
+
+Statement 2: Reciprocating saws are most often used during ventilation
+
+Statement 3: Blade guards are designed specifically for carbide tip blades.
+
+
+A. All three statements are true.
+
+B. Statement 1 is true; statements 2 and 3 are false
+
+C. Statements 1 and 2 are true; statement 3 is false
+
+D. Statement 1 is false; statements 2 and 3 are true.
+B. Statement 1 is true; statements 2 and 3 are false
+When rescuing an unconscious child or small adult from a window, how many rescuers enter the window to assist the victim?A. 3B. 1C. 0D. 2
+D. 2
+When cutting through a roof, a firefighter should avoid:A. removing the built-up material prior to cuttingB. cutting through joists, rafters, or trussesC. making one large openingD. using a power saw
+B. cutting through joists, rafters, or trusses
+Which of the following is an advantage of the flat load?A. Only four people are required to perform the loadB. It is the best way to load large-diameter hoseC. Hose loaded in this manner has fewer sharp bends than other loadsD. Hose for shoulder carries can easily be taken from the load
+B. It is the best way to load large-diameter hose
+Which of the following statements IS CORRECT regarding fire extinguishers and combustible metals?A. All chemical agents need to be applied with a shovel or scoopB. No single agent will control or extinguish fires in all combustible metalsC. The agent needs to break the crust that may form over any burning metal to extinguish the fireD. They come in pressurized and handheld models
+B. No single agent will control or extinguish fires in all combustible metals
+A common factor with regard to multiple firefighter deaths at emergency incidents is:A. the lack of an organized, effective command structureB. they all involved industrial complexesC. all the incidents occurred during forest firesD. they all occurred in urban settings
+A. the lack of an organized, effective command structure
+Which of the following is one of the stages/phases of fire burn?A. RolloverB. Fully developedC. BackdraftD. Initial
+B. Fully developed
+Which of the following IS TRUE regarding personal protective clothing?A. It requires firefighters to wear the most appropriate PPE for the hazard they faceB. It must comply with NFPA 1900 standardC. It prevents a firefighter from burns in situations such as flashoverD. It requires PASS activation whenever bunker gear is worn
+A. It requires firefighters to wear the most appropriate PPE for the hazard they face
+A fire CANNOT BE considered fully extinguished until __________ is complete.A. overhaulB. primary searchC. cause determinationD. secondary search
+A. overhaul
+For an area to qualify as a light hazard, the majority of materials must meet one requirements. One of those is that they must:A. be UL listedB. have ignition temperatures in excess of 451FC. be necessary for the work of the areaD. be noncombustible
+D. be noncombustible
+What type of listening is required by a telecommunicator to draw out all the necessary information from a caller who may be excited, confused, or dealing with a language barrier?A. PresumptiveB. ActiveC. SelectiveD. Modal
+B. Active
+After a roof has been opened up, the firefighter must:A. remove any natural roof openingsB. make another opening on the opposite side of the pitched roofC. ensure the ceiling below the cut is openedD. direct a hose line into the opening
+C. ensure the ceiling below the cut is opened
+How are flammability limits and explosive limits related?A. Explosive limits are used to calculate flammability limitsB. The two terms are neither mathematically nor conceptually related.C. They are interchangeable terms meaning the same thingD. Flammability limits are used to calculate explosive limits
+C. They are interchangeable terms meaning the same thing
+A load the engineer planned for, or anticipated, in the building design is the definition of a(n) __________ load.A. deadB. concentratedC. impactD. design
+D. design
+What type of standpipe is intended for fire department use only?A. Group 5B. Type IIC. Class ID. Level D
+B. Type II
+What types of locking devices usually ARE NOT detected by the forcible entry team?A. Mortise locksB. Auxiliary locking devicesC. PadlocksD. Rim Locks
+B. Auxiliary locking devices
+Which of the following IS TRUE regarding hoisting tools and equipment?A. Use edge roller over sharp edges to prevent physical damage to ropeB. Fire extinguishers and SCBS should not be hoistedC. When working with heights, use teams to ensure safetyD. Use hand over hand method to control rope when hoisting
+B. Fire extinguishers and SCBS should not be hoisted
+The leading killer(s) of people in homes during a fire is/are:A. burnsB. carbon dioxide poisoningC. smoke and toxic gasesD. slips and falls
+C. smoke and toxic gases
+How should an unconscious child be carried down a ladder?A. Over one shoulderB. Across the shouldersC. Cradled across the rescuer's armsD. Vertically, in the crook of one arm
+C. Cradled across the rescuer's arms
+Which type of heat transfer is a major contributor to flashover?A. NuclearB. RadiationC. ConductionD. Convection
+D. Convection
+Which of the following IS NOT one of the methods by which water tenders unload?A. Jet dumps to increase flow rateB. Jet siphons to increase flow rateC. Gravity dumping through large dump valvesD. Apparatus-mounted pumps that off-load the water
+B. Jet siphons to increase flow rate
+Slab doors are constructed in two configurations:A. ledge and framedB. slab and panelC. raised and flatD. solid core and hollow core
+D. solid core and hollow core
+When ventilating a building, all of the following procedures can be used by firefighters except __________ ventilation.A. manualB. forcedC. horizontalD. vertical
+A. manual
+The MOST IMPORTANT piece of information that the caller gives is:A. the caller's telephone numberB. from where s(he) is callingC. the nature of the emergencyD. the location of the emergency
+D. the location of the emergency
+Adults who try to escape a fire on their own are often found in one of two locations. One of those is:A. in a closetB. in the atticC. near a doorD. in the middle of a room
+C. near a door
+One of the most useful tools to aid in handling a charged hoseline is a hose:A. jacketB. wrenchC. clampD. strap
+D. strap
+The MINIMUM quality of air used for SCBA is:A. Grade 6B. Grade 2C. Grade DD. Grade A
+C. Grade D
+What is the term for a short (two to four foot) pike pole designed for use in tight spaces?A. Baker poleB. Porta powerC. K toolD. Closet hook
+D. Closet hook
+Which is always the FIRST step in making plans to bring an emergency situation under control?A. VentilationB. Size-upC. SalvageD. Forcible entry
+B. Size-up
+Of the four fire stream volumes listed below, select the one that is MOST LIKELY supplied by a single 2-1/2 inch hose.A. 460-550 gpmB. 125-350 gpmC. 550-1000 gpmD. 360-460 gpm
+B. 125-350 gpm
+During a two-firefighter raise of a single ladder, it is the responsibility of the _________ to determine the proper placement distance from the building.A. incident commanderB. driver/operatorC. firefighter at the butt (heeler)D. company office
+C. firefighter at the butt (heeler)
+What is the term of water-soluble flammable liquids such as alcohols, acetone, and others?A. Polar solventsB. Volatile fuelsC. Three-dimensional liquidsD. Flammable surfactants
+A. Polar solvents
+The type of hose roll that is the easiest to work with is the:A. dutchmanB. double donutC. straight/storageD. single donut
+D. single donut
+During _________, conditions in the compartment change very rapidly.A. growthB. rolloverC. fully-developedD. flashover
+D. flashover
+The tool that is specifically designed to open double doors equipped with panic bars is a(n):A. claw toolB. French curveC. J toolD. opening strip
+C. J tool
+Under what circumstances should master stream devices be directed into buildings where fire fighters are operating inside?A. Only when the fire is clearly getting the better of the inside crewB. Only when the whereabouts of every person inside is known to the master stream operatorC. Under any circumstancesD. Under no circumstances
+D. Under no circumstances
+Firefighters must use care in checking attic spaces with blown-in insulation because:A. the spaces may be small and difficult to work in.B. some types of insulation can cause skin irritationC. embers can smolder in insulation for many hours before ignitingD. heated surfaces will not be detected with thermal imagers
+C. embers can smolder in insulation for many hours before igniting
+One attractive feature of the fire fighter drag is that it:A. can be done in a toxic environment without SCBAB. requires no equipment to carry outC. works just as well as a water-rescue techniqueD. can be used when the victim is heavier than the rescuer
+D. can be used when the victim is heavier than the rescuer
+The movement of heat through a steel beam to an unexposed part of a building where it starts another fire is an example of:A. radiationB. conductionC. direct-flame contactD. convection
+B. conduction
+What are two methods of raising a ladder to the vertical position?A. Rung raise and beam raiseB. East raise and West raiseC. Manual raise and mechanical raiseD. One-person raise and two-person raise
+D. One-person raise and two-person raise
+With respect to the forcible entry team, in what direction will a door with exposed or visible hinges move?A. It swings toward the forcible entry teamB. When forced, the top swings in, while the bottom swings outC. It can go either toward or away from the team.D. It swings away from the forcible entry team
+A. It swings toward the forcible entry team
+An attack that uses the steam-generating techniques of a ceiling-level attack, along with application of the fire stream on a material burning near the floor level, is known as a(n) _________attack.A. blitzB. directC. indirectD. combination
+D. combination
+Steel performs well under:A. corrosive conditionsB. direct flame impingementC. exposure to high heatD. compression
+B. direct flame impingement
+What is defined as a systematic way to keep track of the location and function of all personnel operating at the scene of an incident?A. A personnel accountability systemB. A grid search systemC. A scalar organizational systemD. A self-modulating personnel system
+A. A personnel accountability system
+Who makes the decision about which type of strategy to use on a given fire?A. Fire ChiefB. Fire InvestigatorC. Safety OfficerD. Incident Commander
+D. Incident Commander
+Another term for the spread of a fire to exposed buildings is:A. attenuationB. mitigationC. trepidationD. extension
+D. extension
+What is the largest difference between Basic 911 and Enhanced 911?A. Basic systems have the capability to provide the caller's telephone number and addressB. Enhanced systems have the capability to provide the caller's telephone number and addressC. Enhanced systems are used only in rural areasD. Basic systems are more reliable than enhanced
+B. Enhanced systems have the capability to provide the caller's telephone number and address
+There is a maximum distance to any fog stream. Further increase in nozzle pressure will only increase:A. volumeB. cavitationC. back pressureD. critical velocity
+A. volume
+Which of the following IS NOT considered one of the basic tasks of the ladder company crew?A. Gaining access to upper floors for search and rescueB. Advancing hose lines to extinguish the fireC. Forcible entry to gain access to the fireD. Gaining access to the roof for ventilation
+B. Advancing hose lines to extinguish the fire
+The chain of command:A. is the pathway of responsibility from the highest level of the department to the lowestB. includes training, safety, finance, and logisticsC. includes incident stabilization, life safety, and property conservationD. allows for supervision of five people by one person
+A. is the pathway of responsibility from the highest level of the department to the lowest
+In most cases, the contents of a building will be predicated by the:A. geographical areaB. occupancy typeC. time of dayD. construction type
+B. occupancy type
+Statement 1: Blades range from large-toothed blades for quick cuts and fine-toothed blades for fine, precise cutsStatement 2: Reciprocating saws are most often used during ventilationStatement 3: Blade guards are designed specifically for carbide tip blades.A. All three statements are true.B. Statement 1 is true; statements 2 and 3 are falseC. Statements 1 and 2 are true; statement 3 is falseD. Statement 1 is false; statements 2 and 3 are true.
+B. Statement 1 is true; statements 2 and 3 are false
+Which of the following is a recommended practice to prevent thermal fire hose damage?A. Allow hose to remain in a heated area after it is dry, provided the air is a moderate temperature.B. Roll dry hose in a straight roll for storage to keep the liner from drying outC. Keep both the inside and outside of woven-jacket fire hose dry whenever it's not in use, especially if not used for extended periods of timeD. Use hot air for only short periods of time when mechanically drying
+B. Roll dry hose in a straight roll for storage to keep the liner from drying out
+The __________ carry can be used on a conscious patient.A. two-personB. firefighter's C. legD. seat
+D. seat
+Which of the following is a recommended practice to prevent organic fire hose damage?A. Remove, inspect, sweep and reload hose if it has not been unloaded from the apparatus within the last year.B. Inspect and test hose annually and after possible damageC. Inspect and thoroughly sweep clean hose that has been contaminated in any wayD. Replace wet hose on the apparatus after a fire only if the department has a shortage of replacement hose.
+B. Inspect and test hose annually and after possible damage
+When advancing a hose into a building via the interior stairs, a 50-foot section will reach _________ floor(s).A. oneB. fourC. twoD. three
+C. two
+Which of the following IS NOT a cause of friction loss in a hose line?A. More adapters than necessaryB. Crushed couplingsC. Number of jacketsD. Rough lining
+C. Number of jackets
+CO2 and dry chemical extinguishers will extinguish both Class B and C fires. What advantage does CO2 have over a dry chemical extinguisher?A. CO2 is effective at a greater distanceB. CO2 will prevent reignition longer than dry chemical extinguisherC. CO2 does not leave a residue or corrode electrical contactsD. CO2 is not a hazard in an enclosed area
+C. CO2 does not leave a residue or corrode electrical contacts
+When drying synthetic rope, keep it:A. in a damp, dark placeB. in a cool, moist, sunlit placeB. in a warm, dry sunlit placeD. out of sunlight
+D. out of sunlight
+When carrying a ladder using the low-shoulder method, firefighters will normally face the __________ during the carry.A. heel or buttB. beamsC. tip or topD. rungs
+A. heel or butt
+The bypass valve on a self-contained breathing apparatus is used:A. to cool the face piece when high heat is encounteredB. during hazardous materials incidentsC. in emergency situations involving a malfunctioning regulatorD. to clear the mask of unwanted condensation
+C. in emergency situations involving a malfunctioning regulator
+Where is the rehabilitation/staging center, usually, at a high-rise fire?A. Outside the fire buildingB. Two or three floors below the fireC. In an uninvolved section of the fire floorD. In the lobby of the fire building
+B. Two or three floors below the fire
+A stream discharging MORE than 350 gpm is known as a/an ___________ stream.A. masterB. boosterC. solidD. elevated
+A. master
+One purpose of a Personnel Accountability System is to:A. help the Fire Chief control sick leave abuseB. keep track of firefighters' salariesC. identify trapped or injured firefightersD. create a job complaint form
+C. identify trapped or injured firefighters
+Which of the following is an advantage of metal ladders?A. Very durableB. Good conductor of heat, cold and electricityC. Retains strength when exposed to heat or flameD. Widest range of sizes
+C. Retains strength when exposed to heat or flame
+Which of the following is/are disadvantages of an SCBA unit based on design and size?A. All of the aboveB. Ability to communicate is decreasedC. The weight and bulk of the unit restricts mobility and agility for firefightersD. Peripheral vision is reduced
+A. All of the above
+The quickest way to force entry through a security roll-up door is to:A. apply a K tool to the latchB. cut the door with a torch or sawC. use the ironsD. use a J tool on the roller
+B. cut the door with a torch or saw
+To maintain personal health, the Firefighter I should receive recommended vaccination against hepatitis:A. AB. BC. CD. D
+B. B
+When faced with an electrical emergency the firefighter shall try to:A. wear rubber boots when approaching the emergency sceneB. obtain a pair of lineman glovesC. have equipment de-energizedD. use a dry rope to pull victim from contact with an energized conductor
+C. have equipment de-energized
+Which of the following is the first stage/phase of fire?A. Fully developedB. Incipient/ignitionC. DecayD. Growth
+B. Incipient/ignition
+What does a frangible bulb do in a sprinkler head?A. Enhance appearance onlyB. Break at a certain temperatureC. Regulate the pressure of the water flowD. Direct the water flow into a flower pattern
+B. Break at a certain temperature
+The two-in/two-out regulation came from the federal agency called:A. FEMAB. EPAC. DOTD. OSHA
+A. FEMA
+In addition to their use in actual emergencies, preincident plans can also be useful as an aid in:A. law enforcementB. budget developmentC. personnel selectionD. training activities
+D. training activities
+Who should operate building HVAC systems to assist in ventilation?A. Truck company personnelB. The incident safety officerC. Firefighters under direct supervision of the incident safety officerD. Only building engineers or maintenance superintendents
+D. Only building engineers or maintenance superintendents
+The quick-response type sprinkler head utilizes a specially designed _________ for its release mechanism.A. valve capB. fusible linkC. chemical pelletD. frangible disc
+B. fusible link
+The phenomenon by which heat, smoke, and fire gases will travel upward to the highest point and become trapped, accumulate, bank down, and spread out laterally is known as:A. buoyancyB. backdraftC. mushroomingD. flashover
+C. mushrooming
+During the response phase of an emergency incident, two aspects of a property are particularly important. One of those is building layout and the other is:A. access informationB. water supply typeC. location of any activated sensor heads on the suppression systemD. location of riser valves on the detection system
+A. access information
+When cutting through a roof, a firefighter should attempt to:A. stand to the downwind sideB. remove the ceiling joist in the ventilation holeC. cut a large circular holeD. make the opening square or rectangle
+D. make the opening square or rectangle
+The MOST COMMON synthetic fiber used in life safety rope is:A. KevlarB. SisalC. polypropyleneD. nylon
+C. polypropylene
+The observation of glass blocks in a wall tell the fire fighters that:A. there is a skylight in that roomB. the wall is not load-bearingC. the wall has not been subjected to fire.D. there is an automatic sprinkler system in that room.
+B. the wall is not load-bearing
+When is the two-person chair carry particularly useful?A. In elevatorsB. Across open fieldsC. Going under low obstaclesD. In narrow corridors
+D. In narrow corridors
+NFPA 1001 is the:A. Standard for Industrial Fire BrigadesB. Standard for Fire Fighter Professional QualificationsC. Standard for Blood Borne Pathogen TrainingD. Standard for Fire Department Occupational Safety and Health Program
+B. Standard for Fire Fighter Professional Qualifications
+Class C fires involve:A. metalsB. energized electrical equipmentC. flammable liquidsD. combustible materials
+B. energized electrical equipment
+What do ladder placement, use of aerial or ground ladders, and emergency exit routes all depend on?A. Time of dayB. Roof constructionC. Water pressureD. Building layout
+D. Building layout
+What is one type of incident, other than a fire, which might impose a tremendous energy drain on fire fighters?A. An ARFF standbyB. A hazardous materials incident requiring fully encapsulating suitsC. A medical emergency where the victim is chokingD. Holding the C-spine at a car crash
+B. A hazardous materials incident requiring fully encapsulating suits
+When inspecting a kernmantle rope, what finding should alert fire fighters to possible damage in the rope?A. Apparent intactness of the mantleB. Color change of the kernC. Color change of the stress threading in the mantleD. Depressions of the kern.
+D. Depressions of the kern
+In order to extinguish smoldering mattresses during overhaul, they should be:A. stood up and allowed to burn outB. ripped open with a chainsaw or similar tool and wet thoroughlyC. removed outside and then soakedD. smothered with a salvage cover
+C. removed outside and then soaked
+A rapid intervention crew team is composed of:A. firefighters waiting by ready to don PPE if necessaryB. at least four firefightersC. at least two firefightersD. firefighters to rescue occupants if found
+C. at least two firefighters
+Heat can travel throughout a burning building by one or more of the following methods:A. extension, conduction, and exposureB. conduction, radiation, and convectionC. conduction, radiation, and expansionD. convection, extension, and expansion
+B. conduction, radiation, and convection
+Forcible entry tools can be grouped into several categories. One is:A. grindingB. twistingC. crushingD. striking
+D. striking
+To ensure safety, the team should:A. utilize an Incident Management SystemB. look out for each otherC. work together and remain intactD. All of the above
+D. All of the above
+Which coupling goes on the inside of a straight hose roll?A. The femaleB. The maleC. Either A or BD. It depends on the diameter
+B. The male
+Firefighters should possess all of the following characteristics EXCEPT:A. professional prideB. integrityC. personal motiveD. courage
+C. personal motive
+Due to rapid cooling, when water is applied to masonry walls the firefighter should look for possible:A. crackingB. sudden wall collapseC. discolorationD. additional fire extension
+A. cracking
+Which of the following statements regarding the hose bed is incorrect?A. The hose cover blocks sunlight that could cause rubber and plastic coated hose to deteriorateB. It should be designed to allow the circulation of air to allow dryingC. The use of a cover will prevent rain and other road contaminants from getting into the hoseD. The hose bed should allow as little air circulation as possible
+D. The hose bed should allow as little air circulation as possible
+A PRIMARY safety concern when raising a ladder should be:A. teamwork and strengthB. ladder selectionC. ladder placement and angle of inclinationD. possible contact with electrical wires and overhead obstructions
+D. possible contact with electrical wires and overhead obstructions
+Structure fires should MOST COMMONLY be attacked from:A. the burned sideB. the outside of the structureC. the unburned sideD. above the fire
+C. the unburned side
+To form the corners of the basin when constructing a catchall, the firefighter should lay ends of the side rolls over at a __________ angle.A. 180B. 30C. 60D. 90
+D. 90
+Which of the following is considered to be a hazardous atmosphere encountered during fires?A. SmokeB. Oxygen deficiencyC. Elevated temperaturesD. All of the above
+D. All of the above
+Prior to entering a fire area with a charged hoseline, the nozzle operator should first:A. wait for a building layoutB. bleed air from the lineC. wait for direction from the pump operatorD. wait for the power to be shut off
+B. bleed air from the line
+
+]
